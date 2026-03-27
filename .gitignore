@@ -1,0 +1,11 @@
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Zip archives
+*.zip
+
+# Editor folders
+.vscode/
+.idea/

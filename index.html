@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IGNITE Club – SVUCE, Tirupati</title>
+  <meta name="description"
+    content="IGNITE is the premier student leadership & innovation club of Sri Venkateswara University College of Engineering, Tirupati. Hosting TedX, IMUN, Hackathons & Rhapsody." />
+  <meta name="keywords"
+    content="IGNITE SVUCE Tirupati, IGNITE club, SVU engineering college, TEDx, IMUN, Rhapsody, student leadership" />
+  <meta property="og:title" content="IGNITE Club – SVUCE, Tirupati" />
+  <meta property="og:description" content="Igniting Potential. Inspiring Leaders." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="ignite_hero_logo.png" />
+</head>
+
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav id="navbar">
+    <a class="logo-nav" href="#home">
+      <img src="IGNITE.png" alt="IGNITE Logo" />
+      <span>IGNITE</span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" data-i18n="nav_home">Home</a></li>
+      <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+      <li><a href="#subcubs" data-i18n="nav_subcubs">Sub-Clubs</a></li>
+      <li><a href="#milestones" data-i18n="nav_milestones">Milestones</a></li>
+      <li><a href="#members" data-i18n="nav_members">Members</a></li>
+      <li><a href="#college" data-i18n="nav_college">College &amp; University</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <label for="lang-select" data-i18n="lang_label">Language</label>
+        <select id="lang-select" aria-label="Language Switcher">
+          <option value="en">English</option>
+          <option value="te">తెలుగు</option>
+          <option value="hi">हिन्दी</option>
+          <option value="pa">ਪੰਜਾਬੀ</option>
+          <option value="as">অসমীয়া</option>
+          <option value="bn">বাংলা</option>
+          <option value="brx">बड़ो</option>
+          <option value="doi">डोगरी</option>
+          <option value="gu">ગુજરાતી</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="ks">کٲشُر</option>
+          <option value="kok">कोंकणी</option>
+          <option value="mai">मैथिली</option>
+          <option value="ml">മലയാളം</option>
+          <option value="mni">মৈতৈলোন্</option>
+          <option value="mr">मराठी</option>
+          <option value="ne">नेपाली</option>
+          <option value="or">ଓଡ଼ିଆ</option>
+          <option value="sa">संस्कृतम्</option>
+          <option value="sat">ᱥᱟᱱᱛᱟᱲᱤ</option>
+          <option value="sd">سنڌي</option>
+          <option value="ta">தமிழ்</option>
+          <option value="ur">اردو</option>
+        </select>
+      </div>
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section id="home">
+    <!-- Animated frame slideshow background -->
+    <div class="hero-video-wrap" id="hero-frame-bg"></div>
+
+    <div class="hero-content">
+      <img src="IGNITE.png" alt="IGNITE" class="hero-logo" />
+      <h1 class="hero-title" data-i18n="hero_tagline">Igniting Potential. Inspiring Leaders.</h1>
+      <p class="hero-subtitle">IGNITE Club</p>
+      <p class="hero-college" data-i18n="hero_sub">Sri Venkateswara University College of Engineering</p>
+      <a href="#about" class="btn-primary" data-i18n="hero_btn">Discover More</a>
+    </div>
+
+    <div class="scroll-indicator"><span></span></div>
+  </section>
+
+  <!-- ======= FLASH NEWS MARQUEE ======= -->
+  <div class="flash-news-bar">
+    <div class="flash-label" data-i18n="news_title">FLASH NEWS</div>
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="marquee-track">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= ABOUT ======= -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title" data-i18n="about_title">About IGNITE</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="about-established">
+            🔥 <span data-i18n="about_est">Established March 04, 2010</span>
+          </div>
+          <p data-i18n="about_desc">IGNITE is the premier student leadership and innovation club of SVUCE, Tirupati.
+            founded on the spirit of transforming student potential into real-world impact, IGNITE has been the breeding
+            ground for visionary leaders, creative thinkers, and change-makers.</p>
+          <p>Our distinguished alumni — <strong>Suresh Perugu</strong> and <strong>Dilli Babu</strong> — stand as
+            enduring testaments to the club's legacy of excellence and its capacity to shape future leaders.</p>
+        </div>
+        <div class="events-list reveal">
+          <h3 style="color:var(--gold);margin-bottom:1rem;font-size:1.1rem;" data-i18n="about_events">Signature Events
+          </h3>
+          <div class="event-item"><span class="event-icon">🎤</span><span data-i18n="about_tedx">TedX Talks (2022 &amp;
+              2025)</span></div>
+          <div class="event-item"><span class="event-icon">💻</span><span data-i18n="about_hack">National
+              Hackathons</span></div>
+          <div class="event-item"><span class="event-icon">🎭</span><span data-i18n="about_rhap">Rhapsody – Annual
+              Cultural Fest</span></div>
+          <div class="event-item"><span class="event-icon">🌍</span><span data-i18n="about_imun">IMUN – IGNITE Model
+              United Nations</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SUB-CLUBS ======= -->
+  <section id="subcubs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Community</span>
+        <h2 class="section-title" data-i18n="subcubs_title">Our Sub-Clubs</h2>
+      </div>
+      <div class="subcubs-grid subcubs-grid--two">
+        <!-- ARTS CLUB -->
+        <div class="club-card club-card--logo reveal">
+          <div class="club-logo-wrap">
+            <img src="ARTS CLUB.png" alt="IGNITE Arts Club" class="club-logo-img" />
+          </div>
+          <div class="club-name" data-i18n="subcubs_arts">ARTS</div>
+          <p class="club-desc">Creative expression through visual arts, design, literature, and culture. Where
+            imagination meets canvas.</p>
+        </div>
+        <!-- COMMUNICATION CLUB -->
+        <div class="club-card club-card--logo reveal">
+          <div class="club-logo-wrap">
+            <img src="COMMUUNICATION CLUB.png" alt="IGNITE Communication Club" class="club-logo-img" />
+          </div>
+          <div class="club-name" data-i18n="subcubs_comm">COMMUNICATION</div>
+          <p class="club-desc">Public speaking, debate, MUNs, media, journalism, and the art of impactful communication.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MILESTONES ======= -->
+  <section id="milestones">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Journey</span>
+        <h2 class="section-title" data-i18n="milestone_title">Milestones</h2>
+      </div>
+      <div class="milestones-grid">
+        <!-- IMUN -->
+        <div class="milestone-card milestone-card--photo reveal">
+          <div class="milestone-event-photo">
+            <img src="EVENTS PHOTOS/IGNITEMUN.jpeg" alt="IGNITE MUN Event" />
+            <div class="photo-overlay">🌍 IMUN</div>
+          </div>
+          <div class="milestone-card-body">
+            <h3 data-i18n="imun_title">IMUN – IGNITE Model United Nations</h3>
+            <p data-i18n="imun_desc">IGNITE proudly introduced the first-ever Model United Nations in Tirupati — a
+              landmark event that brought students face-to-face with global diplomacy, nurturing critical thinking and
+              global citizenship.</p>
+          </div>
+        </div>
+        <!-- TEDx 2022 -->
+        <div class="milestone-card milestone-card--photo reveal">
+          <div class="milestone-event-photo">
+            <img src="EVENTS PHOTOS/TEDX2022.png" alt="TEDx 2022" />
+            <div class="photo-overlay">🎤 TEDx 2022</div>
+          </div>
+          <div class="milestone-card-body">
+            <h3>TEDxSriVenkateswaraU – 2022</h3>
+            <p>An inspiring chapter in IGNITE's legacy — where extraordinary ideas took the TEDx stage at SVUCE for the
+              very first time, sparking conversations that resonated far beyond the campus.</p>
+          </div>
+        </div>
+        <!-- TEDx 2025 -->
+        <div class="milestone-card milestone-card--photo reveal">
+          <div class="milestone-event-photo">
+            <img src="EVENTS PHOTOS/TEDX2025.png" alt="TEDx 2025" />
+            <div class="photo-overlay">🎤 TEDx 2025</div>
+          </div>
+          <div class="milestone-card-body">
+            <h3 data-i18n="tedx_title">TEDxSriVenkateswaraU – April 2025</h3>
+            <p data-i18n="tedx_desc">An electrifying celebration of ideas worth spreading. Our April 2025 TEDx featured
+              six incredible speakers:</p>
+            <ul class="speakers-list" id="speakers-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MEMBERS ======= -->
+  <section id="members">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">The Team</span>
+        <h2 class="section-title" data-i18n="members_title">Leadership Team</h2>
+      </div>
+      <div class="members-grid" id="members-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= COLLEGE ======= -->
+  <section id="college">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Roots</span>
+        <h2 class="section-title" data-i18n="college_title">About SVUCE &amp; SVU</h2>
+      </div>
+      <div class="college-grid">
+        <div class="college-box reveal">
+          <h3 data-i18n="svuce_title">Sri Venkateswara University College of Engineering (SVUCE)</h3>
+          <p data-i18n="svuce_desc">Established in 1959, SVUCE is one of Andhra Pradesh's oldest and most prestigious
+            engineering colleges, situated on the sprawling campus of Sri Venkateswara University in Tirupati. Over six
+            decades, SVUCE has nurtured thousands of engineers who have made significant contributions to industry,
+            academia, and public service across India and the globe.</p>
+        </div>
+        <div class="college-box reveal">
+          <h3 data-i18n="svu_title">Sri Venkateswara University (SVU)</h3>
+          <p data-i18n="svu_desc">Sri Venkateswara University was established in 1954 in Tirupati, Andhra Pradesh. Named
+            after the presiding deity of the Tirumala Hills, the university has grown into a comprehensive centre of
+            higher learning with multiple faculties covering Science, Arts, Commerce, Engineering, Law, and more. It has
+            been consistently recognised for its academic excellence and research contributions.</p>
+        </div>
+      </div>
+
+      <!-- Stats Table -->
+      <div class="stats-table-wrap reveal">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th data-i18n="col_est">Established</th>
+              <th data-i18n="col_students">Students</th>
+              <th data-i18n="col_faculty">Faculty</th>
+              <th data-i18n="col_depts">Departments</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1959</td>
+              <td>3,500+</td>
+              <td>150+</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Rankings -->
+      <div class="section-header reveal" style="margin-top:3rem;">
+        <h2 class="section-title" data-i18n="rankings_title">University Rankings &amp; Achievements</h2>
+      </div>
+      <div class="rankings-grid">
+        <div class="ranking-item reveal">
+          <div class="ranking-body">NIRF</div>
+          <div class="ranking-score">101–150</div>
+          <div class="ranking-label">National Institutional Ranking Framework (Universities)</div>
+        </div>
+        <div class="ranking-item reveal">
+          <div class="ranking-body">QS Asia</div>
+          <div class="ranking-score">Top 500</div>
+          <div class="ranking-label">QS World University Rankings – Asia</div>
+        </div>
+        <div class="ranking-item reveal">
+          <div class="ranking-body">THE</div>
+          <div class="ranking-score">1001+</div>
+          <div class="ranking-label">Times Higher Education World University Rankings</div>
+        </div>
+        <div class="ranking-item reveal">
+          <div class="ranking-body">Research Output</div>
+          <div class="ranking-score">5000+</div>
+          <div class="ranking-label">Publications in Scopus &amp; Web of Science indexed journals</div>
+        </div>
+        <div class="ranking-item reveal">
+          <div class="ranking-body">Patents</div>
+          <div class="ranking-score">200+</div>
+          <div class="ranking-label">Patents granted &amp; published</div>
+        </div>
+        <div class="ranking-item reveal">
+          <div class="ranking-body">NAAC Grade</div>
+          <div class="ranking-score">A+</div>
+          <div class="ranking-label">National Assessment and Accreditation Council</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MAP ======= -->
+  <section id="map-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Location</span>
+        <h2 class="section-title" data-i18n="map_title">Find Us</h2>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.5!2d79.3970675!3d13.6269984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b6b271b4ffd%3A0x30859fdc6c661028!2sSri%20Venkateshwara%20University%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1711500000000"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SVUCE Location"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get Involved</span>
+        <h2 class="section-title" data-i18n="contact_title">CONTACT US</h2>
+      </div>
+      <form class="contact-form reveal" action="https://formspree.io/f/xykbkzrd" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name" data-i18n="contact_name">Full Name</label>
+            <input type="text" id="f-name" name="name" required data-i18n-ph="contact_name" placeholder="Full Name" />
+          </div>
+          <div class="form-group">
+            <label for="f-email" data-i18n="contact_email">Email Address</label>
+            <input type="email" id="f-email" name="email" required data-i18n-ph="contact_email"
+              placeholder="Email Address" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-college" data-i18n="contact_college">College / Institution</label>
+            <input type="text" id="f-college" name="college" data-i18n-ph="contact_college"
+              placeholder="College / Institution" />
+          </div>
+          <div class="form-group">
+            <label for="f-class" data-i18n="contact_class">Class / Year</label>
+            <input type="text" id="f-class" name="class" data-i18n-ph="contact_class"
+              placeholder="e.g. B.Tech 2nd Year" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="f-desc" data-i18n="contact_desc">Tell us about yourself</label>
+          <textarea id="f-desc" name="message" data-i18n-ph="contact_desc"
+            placeholder="Tell us about yourself"></textarea>
+        </div>
+        <!-- Hidden recipient field for Formspree -->
+        <input type="hidden" name="_replyto" value="manas.malla13@gmail.com" />
+        <input type="hidden" name="_subject" value="New IGNITE Club Registration" />
+        <button type="submit" class="form-submit" data-i18n="contact_btn">Submit Registration</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <!-- Live Clock -->
+        <div class="footer-clock">
+          <div class="time" id="live-time">--:--:--</div>
+          <div class="date" id="live-date">Loading…</div>
+        </div>
+
+        <!-- Mini Calendar -->
+        <div class="mini-calendar">
+          <div class="cal-header">
+            <button onclick="calPrev()" aria-label="Previous month">&#8592;</button>
+            <span id="cal-month"></span>
+            <button onclick="calNext()" aria-label="Next month">&#8594;</button>
+          </div>
+          <div class="cal-days-head">
+            <span>Su</span><span>Mo</span><span>Tu</span><span>We</span>
+            <span>Th</span><span>Fr</span><span>Sa</span>
+          </div>
+          <div class="cal-grid" id="cal-grid"></div>
+        </div>
+      </div>
+
+      <!-- Club info -->
+      <div style="text-align:center;margin-bottom:1.5rem;">
+        <img src="IGNITE.png" alt="IGNITE"
+          style="height:60px;opacity:0.85;margin-bottom:0.8rem;mix-blend-mode:screen;" />
+        <p style="color:rgba(255,255,255,0.5);font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;">IGNITE
+          Club · SVUCE, Tirupati, Andhra Pradesh, India</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-credits">
+          Designed with ❤️ by <strong>Malla Manas</strong>, <strong>Devarakonda Charan</strong> &amp; <strong>Aritakula
+            Nagamuktha</strong><br />
+          <span style="font-size:0.8rem;color:rgba(255,255,255,0.4);">Their heart and soul went into making this
+            project.</span>
+          <br /><br />
+          <span style="font-size:0.8rem;">© <span id="copy-year"></span> IGNITE Club, SVUCE · All Rights Reserved</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+  <script src="translations.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
