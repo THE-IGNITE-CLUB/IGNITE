@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate – Support IGNITE Club, SVUCE</title>
+  <meta name="description" content="Support the IGNITE Club. Donate via UPI, NEFT, or Internet Banking." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="IGNITE.png" />
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,te,ta,kn,ml,mr,gu,pa,bn,or,as,ur,sa,ne,sd,kok,mni,doi,sat,mai,brx',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+</head>
+<body>
+
+  <div class="info-bar" id="info-bar">
+    <div class="info-bar-inner">
+      <span class="info-item" id="info-date">📅 Loading…</span>
+      <span class="info-sep">|</span>
+      <span class="info-item" id="info-time">🕐 --:--:--</span>
+      <span class="info-sep">|</span>
+      <span class="info-item">🌐 <a href="https://the-ignite-club.github.io/IGNITE/" class="info-url" target="_blank">the-ignite-club.github.io/IGNITE</a></span>
+    </div>
+  </div>
+
+  <nav id="navbar">
+    <a class="logo-nav" href="index.html"><img src="IGNITE.png" alt="IGNITE Logo" /><span>IGNITE</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#subcubs">Sub-Clubs</a></li>
+      <li><a href="index.html#milestones">Milestones</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="index.html#college">College &amp; University</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="donate.html" class="nav-donate nav-active">💛 Donate</a></li>
+    </ul>
+    <div class="nav-right">
+      <div id="google_translate_element" class="gt-widget"></div>
+      <div class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="page-hero donate-hero">
+    <div class="page-hero-content">
+      <span class="section-label">Keep the Flame Burning</span>
+      <h1 class="page-hero-title">Support IGNITE</h1>
+      <p class="page-hero-sub">Your contribution keeps our website running and our initiatives alive.</p>
+    </div>
+  </div>
+
+  <section id="donate-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Donation Portal</span>
+        <h2 class="section-title">Make a Contribution</h2>
+      </div>
+      <div class="donate-grid reveal">
+
+        <!-- LEFT: Why Donate -->
+        <div class="donate-why">
+          <h3 class="donate-why-title">Why Your Support Matters</h3>
+          <div class="donate-reason"><span class="donate-reason-icon">🌐</span><div><strong>Website Maintenance</strong><p>Keep the IGNITE Club website live and updated for students and alumni worldwide.</p></div></div>
+          <div class="donate-reason"><span class="donate-reason-icon">🎤</span><div><strong>Event Organisation</strong><p>Fund IMUN, TEDx, Hackathons, and Rhapsody to empower the next generation.</p></div></div>
+          <div class="donate-reason"><span class="donate-reason-icon">🏆</span><div><strong>Student Initiatives</strong><p>Support scholarships, resources, workshops, and leadership development programs.</p></div></div>
+          <div class="donate-reason"><span class="donate-reason-icon">🔥</span><div><strong>Club Legacy</strong><p>Help preserve and grow the 15-year legacy of innovation and leadership at SVUCE.</p></div></div>
+          <div class="donate-security">
+            <div class="security-badge">🔒 Secure &amp; Transparent</div>
+            <p>All donations go directly to the IGNITE Club account. UPI transactions are end-to-end encrypted via NPCI infrastructure at the bank level.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: Payment Portal -->
+        <div class="donate-portal">
+          <div class="amount-section">
+            <div class="amount-label">Select or enter amount (₹)</div>
+            <div class="amount-presets">
+              <button class="amount-btn" onclick="setAmount(100,this)">₹100</button>
+              <button class="amount-btn" onclick="setAmount(250,this)">₹250</button>
+              <button class="amount-btn active" onclick="setAmount(500,this)">₹500</button>
+              <button class="amount-btn" onclick="setAmount(1000,this)">₹1,000</button>
+              <button class="amount-btn" onclick="setAmount(2500,this)">₹2,500</button>
+            </div>
+            <div class="amount-custom-wrap">
+              <span class="amount-currency">₹</span>
+              <input type="number" id="donate-amount" class="amount-input" value="500" min="1" placeholder="Enter amount" oninput="syncAmount(this.value)" />
+            </div>
+          </div>
+          <div class="donor-form">
+            <div class="form-group">
+              <label for="donor-name">Your Name (optional)</label>
+              <input type="text" id="donor-name" placeholder="Full Name" />
+            </div>
+            <div class="form-group">
+              <label for="donor-msg">Message (optional)</label>
+              <input type="text" id="donor-msg" placeholder="A short message for IGNITE" maxlength="80" />
+            </div>
+          </div>
+          <div class="payment-methods">
+            <div class="payment-method-label">Pay via</div>
+            <div class="payment-tabs">
+              <button class="payment-tab active" onclick="switchTab(this,'upi')">📱 UPI App</button>
+              <button class="payment-tab" onclick="switchTab(this,'qr')">📷 QR Code</button>
+              <button class="payment-tab" onclick="switchTab(this,'neft')">🏦 NEFT / Net Banking</button>
+            </div>
+
+            <!-- UPI Tab -->
+            <div class="payment-panel" id="panel-upi">
+              <p class="payment-info">Click a button to open your UPI app directly and complete the payment instantly.</p>
+              <div class="upi-buttons">
+                <a href="#" class="upi-btn" onclick="openUPI();return false;"><span>G</span> Google Pay</a>
+                <a href="#" class="upi-btn" onclick="openUPI();return false;"><span>P</span> PhonePe</a>
+                <a href="#" class="upi-btn" onclick="openUPI();return false;"><span>T</span> Paytm</a>
+                <a href="#" class="upi-btn upi-btn--primary" onclick="openUPI();return false;">💳 Any UPI App</a>
+              </div>
+              <p class="upi-id-display">UPI ID: <strong id="display-upi-id">9985966627@ybl</strong></p>
+              <p class="upi-note">Clicking will open your default UPI app. Complete payment there and share the UTR number with us at <a href="mailto:manas.malla13@gmail.com" style="color:var(--gold)">manas.malla13@gmail.com</a> for confirmation.</p>
+            </div>
+
+            <!-- QR Tab -->
+            <div class="payment-panel hidden" id="panel-qr">
+              <p class="payment-info">Scan this QR code with any UPI app (PhonePe, GPay, Paytm, BHIM, etc.)</p>
+              <div class="qr-container">
+                <div class="qr-placeholder">
+                  <div class="qr-corner tl"></div><div class="qr-corner tr"></div>
+                  <div class="qr-corner bl"></div><div class="qr-corner br"></div>
+                  <div class="qr-inner">
+                    <div style="font-size:2.5rem;">📱</div>
+                    <div style="font-size:0.85rem;color:var(--gold);margin-top:0.5rem;font-weight:700;">UPI QR Code</div>
+                    <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:0.3rem;">9985966627@ybl</div>
+                  </div>
+                </div>
+              </div>
+              <p class="upi-note">Open any UPI app → Scan &amp; Pay → Enter amount → Complete transaction</p>
+            </div>
+
+            <!-- NEFT Tab -->
+            <div class="payment-panel hidden" id="panel-neft">
+              <p class="payment-info">Transfer directly via NEFT, RTGS, IMPS, or Internet Banking:</p>
+              <div class="bank-details">
+                <div class="bank-row"><span class="bank-label">Account Name</span><span class="bank-value">IGNITE Club – SVUCE</span><button class="copy-btn" onclick="copyText('IGNITE Club – SVUCE',this)">Copy</button></div>
+                <div class="bank-row"><span class="bank-label">Account Number</span><span class="bank-value">XXXXXXXXXXXX</span><button class="copy-btn" onclick="copyText('XXXXXXXXXXXX',this)">Copy</button></div>
+                <div class="bank-row"><span class="bank-label">IFSC Code</span><span class="bank-value">XXXXXXXXXX</span><button class="copy-btn" onclick="copyText('XXXXXXXXXX',this)">Copy</button></div>
+                <div class="bank-row"><span class="bank-label">Bank Name</span><span class="bank-value">Update with your bank name</span></div>
+                <div class="bank-row"><span class="bank-label">UPI ID</span><span class="bank-value">9985966627@ybl</span><button class="copy-btn" onclick="copyText('9985966627@ybl',this)">Copy</button></div>
+              </div>
+              <p class="upi-note">After transfer, email the UTR/transaction reference to <a href="mailto:manas.malla13@gmail.com" style="color:var(--gold)">manas.malla13@gmail.com</a></p>
+              <p class="bank-notice">⚠️ Please update the actual bank account number and IFSC code before publishing.</p>
+            </div>
+          </div>
+          <div class="donate-thank">🙏 Every rupee counts. Thank you for supporting IGNITE!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-clock"><div class="time" id="live-time">--:--:--</div><div class="date" id="live-date">Loading…</div></div>
+        <div class="mini-calendar">
+          <div class="cal-header"><button onclick="calPrev()">&#8592;</button><span id="cal-month"></span><button onclick="calNext()">&#8594;</button></div>
+          <div class="cal-days-head"><span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span></div>
+          <div class="cal-grid" id="cal-grid"></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-bottom:1.5rem;">
+        <img src="IGNITE.png" alt="IGNITE" style="height:60px;opacity:0.85;margin-bottom:0.8rem;mix-blend-mode:screen;" />
+        <p style="color:rgba(255,255,255,0.5);font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;">IGNITE Club · SVUCE, Tirupati, Andhra Pradesh, India</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-credits">
+          Website developed by <strong>Malla Manas</strong>, <strong>Devarakonda Charan</strong> and <strong>Aritakula Nagamuktha</strong><br />
+          <span style="font-size:0.8rem;color:rgba(255,255,255,0.4);">Their heart and soul went into making this project.</span><br /><br />
+          <span style="font-size:0.8rem;">© <span id="copy-year"></span> IGNITE Club, SVUCE · All Rights Reserved</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+  <script src="translations.js"></script>
+  <script src="main.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    const UPI_ID = '9985966627@ybl';
+    const PAYEE_NAME = 'IGNITE%20Club%20SVUCE';
+
+    function setAmount(val, btn) {
+      document.getElementById('donate-amount').value = val;
+      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+    function syncAmount(val) {
+      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+    }
+    function openUPI() {
+      const amt = document.getElementById('donate-amount').value || 500;
+      const note = encodeURIComponent('Donation to IGNITE Club SVUCE');
+      window.location.href = `upi://pay?pa=${UPI_ID}&pn=${PAYEE_NAME}&am=${amt}&cu=INR&tn=${note}`;
+    }
+    function switchTab(btn, panel) {
+      document.querySelectorAll('.payment-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.payment-panel').forEach(p => p.classList.add('hidden'));
+      btn.classList.add('active');
+      document.getElementById('panel-' + panel).classList.remove('hidden');
+    }
+    function copyText(text, btn) {
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = '✓ Copied';
+        setTimeout(() => btn.textContent = 'Copy', 1800);
+      });
+    }
+  </script>
+</body>
+</html>
